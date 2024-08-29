@@ -1,5 +1,16 @@
 {
   "phases": {
+    "setup": {
+      "cmds": [
+        "python3 -m venv /opt/venv",
+        ". /opt/venv/bin/activate"
+      ]
+    },
+    "install": {
+      "cmds": [
+        "pip install -r requirements.txt"
+      ]
+    },
     "start": {
       "cmds": [
         "python app.py"
